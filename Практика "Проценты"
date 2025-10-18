@@ -1,0 +1,12 @@
+public static double Calculate(string userInput)
+{
+     var parts = userInput.Split();
+        
+     var principal = double.Parse(parts[0]);        
+     var annualRatePercent = double.Parse(parts[1]); 
+     var months = int.Parse(parts[2]);               
+        
+     var percent = (annualRatePercent / 100.0) / 12;
+     var amount = principal * Math.Pow(1 + percent, months);
+     return amount;
+}
