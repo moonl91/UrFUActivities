@@ -48,3 +48,14 @@
           class="card-image"
           src="https://code.s3.yandex.net/web-code/images/freetrack/04/card-3.jpg"
         />
+ <h3 class="card-title">Шрифты</h3>
+        <p class="card-text">
+          Не больше трёх шрифтов на сайт. Один для заголовков, второй — для всех
+          остальных текстов, третий — для выделения важных слов. Должно хватить.
+        </p>
+      </div>
+      <div class="card no-right-margin">
+        <img
+          class="card-image"
+          src="https://code.s3.yandex.net/web-code/images/freetrack/04/card-4.jpg"
+        />
