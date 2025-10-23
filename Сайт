@@ -59,3 +59,17 @@
           class="card-image"
           src="https://code.s3.yandex.net/web-code/images/freetrack/04/card-4.jpg"
         />
+<h3 class="card-title">Цвета</h3>
+        <p class="card-text">
+          Обычно на сайте два цвета: ведущий и акцентный. Подобрать удачную
+          цветовую пару можно за счёт насмотренности или специальных
+          инструментов.
+        </p>
+      </div>
+    </section>
+    <footer class="footer">
+      <h4 class="footer-author">Я х Практикум</h4>
+    </footer>
+  </body>
+</html>
+
