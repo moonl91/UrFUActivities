@@ -55,3 +55,18 @@ body {
   padding: 25px 25px 30px;
   box-shadow: 4px 4px 0 black;
 }
+.no-right-margin {
+  margin-right: 0;
+}
+
+.card-title {
+  margin-bottom: 10px;
+  font-weight: 800;
+  font-size: 31px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.card-text {
+  font-size: 18px;
+}
