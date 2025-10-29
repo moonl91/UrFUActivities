@@ -81,3 +81,9 @@ body {
   height: 200px;
   background-color: #5f0dee;
 }
+.footer-author {
+  margin: auto;
+  color: white;
+  font-weight: 800;
+  font-size: 25px;
+}
