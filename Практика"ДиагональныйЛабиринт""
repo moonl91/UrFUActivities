@@ -1,0 +1,27 @@
+namespace Mazes
+
+{
+
+    public static class DiagonalMazeTask
+
+    {
+
+        public static void MoveOut(Robot robot, int width, int height)
+
+        {
+
+            var primaryDirection = GetPrimaryDirection(width, height);
+
+            var secondaryDirection = GetSecondaryDirection(width, height);
+
+            var stepsBetweenTurns = CalculateStepRatio(width, height);
+
+            
+
+            NavigateDiagonally(robot, primaryDirection, secondaryDirection, stepsBetweenTurns);
+
+        }
+
+    }
+
+}
