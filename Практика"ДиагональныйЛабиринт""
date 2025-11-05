@@ -23,5 +23,13 @@ namespace Mazes
         {
             return width > height ? Direction.Down : Direction.Right;
         }
+
+        private static int CalculateStepRatio(int width, int height)
+        {
+            if (width > height)
+                return (width - 2) / (height - 2);
+            else
+                return (height - 2) / (width - 2);
+        }
     }
 }
