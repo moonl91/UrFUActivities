@@ -31,5 +31,14 @@ namespace Mazes
             else
                 return (height - 2) / (width - 2);
         }
+         private static void NavigateDiagonally(Robot robot, Direction primary, Direction secondary, int steps)
+        {
+            while (!robot.Finished)
+            {
+                MoveMultipleSteps(robot, primary, steps);
+                if (robot.Finished) break;
+                robot.MoveTo(secondary);
+            }
+        }    
     }
 }
