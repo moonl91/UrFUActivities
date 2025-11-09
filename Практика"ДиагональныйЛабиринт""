@@ -1,17 +1,14 @@
 namespace Mazes
 {
-
     public static class DiagonalMazeTask
     {
-
         public static void MoveOut(Robot robot, int width, int height)
         {
             var primaryDirection = GetPrimaryDirection(width, height);
             var secondaryDirection = GetSecondaryDirection(width, height);
             var stepsBetweenTurns = CalculateStepRatio(width, height);
-
+            
             NavigateDiagonally(robot, primaryDirection, secondaryDirection, stepsBetweenTurns);
-
         }
 
         private static Direction GetPrimaryDirection(int width, int height)
@@ -31,7 +28,8 @@ namespace Mazes
             else
                 return (height - 2) / (width - 2);
         }
-         private static void NavigateDiagonally(Robot robot, Direction primary, Direction secondary, int steps)
+
+        private static void NavigateDiagonally(Robot robot, Direction primary, Direction secondary, int steps)
         {
             while (!robot.Finished)
             {
@@ -39,6 +37,14 @@ namespace Mazes
                 if (robot.Finished) break;
                 robot.MoveTo(secondary);
             }
-        }    
+        }
+
+        private static void MoveMultipleSteps(Robot robot, Direction dir, int count)
+        {
+            for (int i = 0; i < count && !robot.Finished; i++)
+            {
+                robot.MoveTo(dir);
+            }
+        }
     }
 }
